@@ -131,7 +131,7 @@ const Home = () => {
               <span>소스 코드 저장소</span>
             </a>
             <a className="w-100 h-50 bg-white rounded-2xl cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 px-4 py-6 flex flex-col gap-5">
-              <h3 className="text-3xl font-bold">Velog</h3>
+              <h3 className="text-3xl font-bold">Blog</h3>
               <span className="text-blue-600">/velog.io/@jump6746</span>
               <span>흥미롭거나 새롭게 배운 것들을 기록하는 블로그</span>
             </a>
@@ -140,9 +140,36 @@ const Home = () => {
       </section>
       {/* 프로젝트 */}
       <section className="w-full py-15 bg-indigo-200">
-        <div className="flex flex-col max-w-6xl px-4 mx-auto">
+        <div className="flex flex-col max-w-6xl px-4 mx-auto gap-10">
           <h2 className="text-4xl font-semibold">Projects</h2>
-          <div className="flex"></div>
+          <div className="flex nowrap w-full">
+            <div className="flex flex-col bg-white px-4 py-5 rounded-xl gap-3">
+              <h3>Honeyboard (React)</h3>
+              <div className="flex gap-2">
+                <span>2024.12 ~ 2025.02</span>
+                <span>12인 팀프로젝트</span>
+              </div>
+              <span>
+                IT 강사님들의 효율적인 수업 운영을 위한 올인원 수업 관리
+                웹사이트
+              </span>
+              <ul className="list-disc px-4 space-y-2">
+                <li className="">
+                  수업 자료 관리, 알고리즘 학습 지원, 프로젝트 관리, 학생 관리를
+                  도와주는 시스템 제공
+                </li>
+                <li>
+                  Tanstack-Query를 활용하여 학생 상태 추적, 팀 관리 기능 개발
+                </li>
+              </ul>
+              <a href="https://honeyboard.site">https://honeyboard.site</a>
+              <div className="bg-green-200 px-4 py-2 w-fit rounded-xl border border-green-400">
+                <span>
+                  React, Typescript, Tailwind CSS, Tanstack-Query, Zustand
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
