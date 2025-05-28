@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navigation = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -15,8 +16,30 @@ const Navigation = () => {
     { href: "/archive", label: "Archive" },
   ];
 
+  // 스크롤 이벤트 감지
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    // 스크롤 이벤트 리스너 추가
+    window.addEventListener("scroll", handleScroll);
+
+    // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-white shadow-lg">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-sky-200/75 backdrop-blur-sm shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* 로고 */}
@@ -30,8 +53,10 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`hover:text-blue-600 transition-colors ${
-                  pathname === item.href ? "text-blue-600 font-semibold" : ""
+                className={`hover:text-sky-500 transition-colors ${
+                  pathname === item.href
+                    ? "text-sky-700 font-semibold hover:text-sky-700"
+                    : ""
                 }`}
               >
                 {item.label}
