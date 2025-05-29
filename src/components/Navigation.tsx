@@ -1,19 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Navigation = () => {
-  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/archive", label: "Archive" },
+    { href: "#AboutMe", label: "내 정보" },
+    { href: "#Skill", label: "기술 스택" },
+    { href: "#Archive", label: "저장소" },
+    { href: "#Projects", label: "프로젝트" },
+    { href: "#Career", label: "경력 & 활동" },
   ];
 
   // 스크롤 이벤트 감지
@@ -53,11 +52,7 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`hover:text-sky-500 transition-colors ${
-                  pathname === item.href
-                    ? "text-sky-700 font-semibold hover:text-sky-700"
-                    : ""
-                }`}
+                className={`hover:text-sky-800 transition-colors font-semibold`}
               >
                 {item.label}
               </Link>
