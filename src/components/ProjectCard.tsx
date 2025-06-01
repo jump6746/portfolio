@@ -1,3 +1,5 @@
+import ProjectModal from "./ProjectModal";
+
 interface Props {
   title: string;
   term: string;
@@ -40,9 +42,7 @@ const ProjectCard = ({
       <div className="bg-green-200 px-4 py-2 w-fit rounded-xl border border-green-400">
         <span>{tech.join(", ")}</span>
       </div>
-      <button className="px-2 py-1 w-fit border-2 border-gray-400 text-gray-600 text-sm rounded-lg cursor-pointer hover:border-gray-600 hover:font-semibold">
-        세부내용
-      </button>
+      <ProjectModal id={1} />
     </div>
   );
 };
