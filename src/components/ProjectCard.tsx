@@ -1,6 +1,7 @@
 import ProjectModal from "./ProjectModal";
 
 interface Props {
+  id: number;
   title: string;
   term: string;
   people: number;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const ProjectCard = ({
+  id,
   title,
   term,
   people,
@@ -42,7 +44,7 @@ const ProjectCard = ({
       <div className="bg-green-200 px-4 py-2 w-fit rounded-xl border border-green-400">
         <span>{tech.join(", ")}</span>
       </div>
-      <ProjectModal id={1} />
+      <ProjectModal id={id} />
     </div>
   );
 };

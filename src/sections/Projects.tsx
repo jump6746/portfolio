@@ -7,6 +7,7 @@ const Projects = () => {
         <h2 className="text-4xl font-semibold text-center">프로젝트</h2>
         <div className="flex flex-wrap w-full h-fit gap-10 justify-center">
           <ProjectCard
+            id={1}
             title="PixmeUp (React, Kotlin)"
             term="2025.04 ~ 2025.05"
             people={6}
@@ -26,6 +27,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            id={2}
             title="HoneyKeep (React)"
             term="2025.02 ~ 2025.04"
             people={6}
@@ -45,6 +47,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            id={3}
             title="MIMO (React)"
             term="2025.01 ~ 2025.02"
             people={6}
@@ -63,6 +66,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            id={4}
             title="Honeyboard (React)"
             term="2024.12 ~ 2025.02"
             people={12}
