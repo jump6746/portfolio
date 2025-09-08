@@ -1,51 +1,42 @@
-import { Icon } from "@/components";
-
 const AboutMe = () => {
   return (
-    <section id="AboutMe" className="w-full py-15">
-      <div className="flex flex-col max-w-6xl px-4 mx-auto gap-10">
-        <h2 className="text-4xl font-semibold text-center">내 정보</h2>
-        <div className="flex gap-10">
-          <div className="bg-blue-200 w-60 h-90 rounded-xl"></div>
-          <div className="flex text-xl justify-between gap-4 py-3">
-            <div className="flex flex-col justify-between font-semibold">
-              <div className="flex gap-4 items-center">
-                <Icon name="smile-face" />
-                <span>이름</span>
-              </div>
-              <div className="flex gap-4 items-center">
-                <Icon name="calendar" />
-                <span>생년월일</span>
-              </div>
-              <div className="flex gap-4 items-center">
-                <Icon name="home" />
-                <span>거주지</span>
-              </div>
-              <div className="flex gap-4 items-center">
-                <Icon name="phone-call" />
-                <span>연락처</span>
-              </div>
-              <div className="flex gap-4 items-center">
-                <Icon name="message" />
-                <span>이메일</span>
-              </div>
-              <div className="flex gap-4 items-center">
-                <Icon name="academy-cap" />
-                <span>학력</span>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between">
-              <span>김종명</span>
-              <span>1997.03.04</span>
-              <span>경기도 고양시</span>
-              <span>010-9466-6746</span>
-              <span>jump6746@naver.com</span>
-              <div className="flex items-baseline gap-2">
-                <span>서울과학기술대학교</span>
-                <span className="text-lg">(전자IT미디어공학과)</span>
-              </div>
-            </div>
-          </div>
+    <section className="flex flex-col items-center gap-20 py-20 px-15">
+      <div className="flex flex-col gap-2 items-center">
+        <h3 className="text-blue-600 font-semibold text-xl">핵심 역량</h3>
+        <span className="text-2xl font-medium text-gray-800 whitespace-pre-wrap md:whitespace-normal">
+          {`팀원과 같이 성장하는\n효율적인 개발을 합니다.`}
+        </span>
+      </div>
+      <div className="flex flex-col lg:flex-row justify-center gap-10">
+        <div className="flex flex-col gap-8 p-5">
+          <h4 className="text-blue-600 font-semibold text-xl">
+            프론트엔드 역량
+          </h4>
+          <p className="font-medium text-gray-800">
+            React와 Vue 기반의 프론트엔드 개발 경험이 있으며, <br />
+            Javascript와 Typescript에 능숙합니다. <br /> Next.js와 다양한 React
+            라이브러리를 활용한 <br /> 프로젝트 경험이 있습니다.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8 p-5">
+          <h4 className="text-blue-600 font-semibold text-xl">
+            협업 및 커뮤니케이션
+          </h4>
+          <p className="font-medium text-gray-800">
+            GitHub, GitLab을 활용한 협업 경험이 있으며, <br /> Jira, Notion 등
+            협업 도구에도 익숙합니다. <br /> 기획, 디자인, 백엔드 직무 경험을
+            바탕으로 <br /> 원활한 크로스 직군 협업이 가능합니다.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8 p-5">
+          <h4 className="text-blue-600 font-semibold text-xl">
+            효율적인 웹 아키텍처 설계
+          </h4>
+          <p className="font-medium text-gray-800">
+            API 호출 전략을 수립하고 Web Worker를 적용해 <br /> 서버 리소스를
+            절감했습니다. <br /> 프로젝트 전반에서 활용 가능한 유틸 함수들을
+            정리하여 <br /> 유지보수성과 가독성을 높였습니다.
+          </p>
         </div>
       </div>
     </section>

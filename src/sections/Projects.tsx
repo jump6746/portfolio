@@ -2,13 +2,15 @@ import { ProjectCard } from "@/components";
 
 const Projects = () => {
   return (
-    <section id="Projects" className="w-full py-15 bg-indigo-200">
+    <section id="project" className="w-full py-15">
       <div className="flex flex-col max-w-6xl px-4 mx-auto gap-10">
-        <h2 className="text-4xl font-semibold text-center">프로젝트</h2>
-        <div className="flex flex-wrap w-full h-fit gap-10 justify-center">
+        <h2 className="text-blue-600 font-semibold text-xl mx-auto">
+          프로젝트
+        </h2>
+        <div className="flex flex-col items-center w-full h-fit gap-10 justify-center">
           <ProjectCard
             id={1}
-            title="PixmeUp (React, Kotlin)"
+            title="PixmeUp"
             term="2025.04 ~ 2025.05"
             people={6}
             summary="Pixelro 기업과 연계한 내눈 키오스크 기반 AI 눈 건강 플랫폼"
@@ -22,13 +24,13 @@ const Projects = () => {
               "Typescript",
               "Kotlin",
               "Tailwind CSS",
-              "Tanstack-Query",
+              "Tanstack Query",
               "Zustand",
             ]}
           />
           <ProjectCard
             id={2}
-            title="HoneyKeep (React)"
+            title="HoneyKeep"
             term="2025.02 ~ 2025.04"
             people={6}
             summary="계획적인 소비 습관을 만드는 자산관리 서비스"
@@ -42,13 +44,13 @@ const Projects = () => {
               "React",
               "Typescript",
               "Tailwind CSS",
-              "Tanstack-Query",
+              "Tanstack Query",
               "Zustand",
             ]}
           />
           <ProjectCard
             id={3}
-            title="MIMO (React)"
+            title="MIMO"
             term="2025.01 ~ 2025.02"
             people={6}
             summary="모임 관리 플랫폼 서비스"
@@ -61,13 +63,13 @@ const Projects = () => {
               "React",
               "Typescript",
               "Tailwind CSS",
-              "Tanstack-Query",
+              "Tanstack Query",
               "Zustand",
             ]}
           />
           <ProjectCard
             id={4}
-            title="Honeyboard (React)"
+            title="Honeyboard"
             term="2024.12 ~ 2025.02"
             people={12}
             summary="IT 강사님들의 효율적인 수업 운영을 위한 올인원 수업 관리
@@ -81,7 +83,7 @@ const Projects = () => {
               "React",
               "Typescript",
               "Tailwind CSS",
-              "Tanstack-Query",
+              "Tanstack Query",
               "Zustand",
             ]}
           />

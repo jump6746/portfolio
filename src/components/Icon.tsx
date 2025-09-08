@@ -10,19 +10,24 @@ type IconName =
   | "home"
   | "message"
   | "phone-call"
-  | "smile-face";
+  | "smile-face"
+  | "velog";
 
 interface IconProps extends SVGProps<SVGSVGElement> {
-  name: IconName;
+  name?: IconName;
   size?: number;
+  src?: string;
 }
 
 const Icon = ({
   name,
   className = "fill-current",
   size = 24,
+  src,
   ...props
 }: IconProps) => {
+  const url = src ? src : `/icon/_sprite.svg#${name}`;
+
   return (
     <svg
       className={className}
@@ -32,7 +37,7 @@ const Icon = ({
       preserveAspectRatio="xMidYMid meet"
       {...props}
     >
-      <use href={`/icon/_sprite.svg#${name}`} />
+      <use href={url} />
     </svg>
   );
 };

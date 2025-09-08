@@ -8,11 +8,11 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
-    { href: "#AboutMe", label: "내 정보" },
-    { href: "#Skill", label: "기술 스택" },
-    { href: "#Archive", label: "저장소" },
-    { href: "#Projects", label: "프로젝트" },
-    { href: "#Career", label: "경력 & 활동" },
+    { href: "#about", label: "내 정보" },
+    { href: "#skill", label: "기술" },
+    { href: "#archive", label: "저장소" },
+    { href: "#project", label: "프로젝트" },
+    { href: "#career", label: "경력 & 활동" },
   ];
 
   // 스크롤 이벤트 감지
@@ -34,9 +34,7 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-sky-200/75 backdrop-blur-sm shadow-lg"
-          : "bg-transparent"
+        isScrolled ? "bg-white/75 backdrop-blur-sm shadow-lg" : "bg-white"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4">

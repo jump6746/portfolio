@@ -41,7 +41,7 @@ const ProjectModal = ({ id }: Props) => {
       {/* 더보기 버튼 */}
       <button
         onClick={handleMoreClick}
-        className="inline-flex items-center text-gray-600 hover:font-semibold border w-fit px-2 py-1 rounded-md cursor-pointer hover:border-gray-600 border-gray-400 text-sm"
+        className="text-gray-400 hover:font-semibold mx-auto hover:text-gray-600 w-fit cursor-pointer"
       >
         상세보기
       </button>
