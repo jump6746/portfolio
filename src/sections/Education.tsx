@@ -8,14 +8,18 @@ const Education = () => {
         교육 및 어학
       </h3>
       <div className="flex flex-col gap-10 items-start">
-        <div className="flex justify-center gap-15">
-          <span className="text-gray-400 text-lg">2024 - 2025</span>
+        <div className="flex justify-center gap-5 sm:gap-15">
+          <span className="text-gray-400 text-base sm:text-lg">
+            2024 - 2025
+          </span>
           <div className="flex flex-col gap-1">
-            <h4 className="text-lg font-semibold">
+            <h4 className="text-base sm:text-lg font-semibold">
               삼성 청소년 SW 아카데미 (SSAFY)
             </h4>
-            <span className="text-md text-gray-600">삼성 주관</span>
-            <ul className="list-disc text-gray-600 text-sm space-y-2 px-5">
+            <span className="text-sm sm:text-base text-gray-400 font-medium">
+              삼성 주관
+            </span>
+            <ul className="list-disc text-gray-600 text-xs sm:text-sm space-y-2 px-5 py-2">
               <li>Java 지식 및 Spring 관련 백엔드 지식 학습</li>
               <li>MySQL 활용한 데이터베이스 지식 학습</li>
               <li>개발 관련 CS 지식 학습</li>
@@ -24,12 +28,18 @@ const Education = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center gap-15">
-          <span className="text-gray-400 text-lg">2023 - 2024</span>
-          <div className="flex flex-col gap-1 items-start">
-            <h4 className="text-lg font-semibold">프론트엔드 스쿨</h4>
-            <span className="text-md text-gray-600">멋쟁이 사자처럼 주관</span>
-            <ul className="list-disc text-gray-600 text-sm space-y-2 px-5">
+        <div className="flex justify-center gap-5 sm:gap-15">
+          <span className="text-gray-400 text-base sm:text-lg">
+            2023 - 2024
+          </span>
+          <div className="flex flex-col gap-1">
+            <h4 className="text-base sm:text-lg font-semibold">
+              프론트엔드 스쿨
+            </h4>
+            <span className="text-sm sm:text-base text-gray-400 font-medium">
+              멋쟁이 사자처럼 주관
+            </span>
+            <ul className="list-disc text-gray-600 text-xs sm:text-sm space-y-2 px-5 py-2">
               <li>웹 표준과 웹 접근성, 시맨틱 마크업 학습</li>
               <li>
                 반응형 웹 디자인, Javascript 학습 및 활용한 바닐라 프로젝트 진행
@@ -38,12 +48,18 @@ const Education = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center gap-15">
-          <span className="text-gray-400 text-lg">2016 - 2023</span>
+        <div className="flex justify-center gap-5 sm:gap-15">
+          <span className="text-gray-400 text-base sm:text-lg">
+            2016 - 2023
+          </span>
           <div className="flex flex-col gap-1">
-            <h4 className="text-lg font-semibold">서울과학기술대학교</h4>
-            <span className="text-md text-gray-600">전자IT미디어공학 전공</span>
-            <ul className="list-disc text-gray-600 text-sm space-y-2 px-5">
+            <h4 className="text-base sm:text-lg font-semibold">
+              서울과학기술대학교
+            </h4>
+            <span className="text-sm sm:text-base text-gray-400 font-medium">
+              전자IT미디어공학 전공
+            </span>
+            <ul className="list-disc text-gray-600 text-xs sm:text-sm space-y-2 px-5 py-2">
               <li>
                 영상, 음성, 데이터 등 다양한 정보를 네트워크로 주고받는 방법
                 학습
@@ -58,11 +74,15 @@ const Education = () => {
       </div>
       <div className="h-1 max-w-xl min-w-2xs w-full bg-gray-200"></div>
       <div className="flex flex-col gap-10 items-start">
-        <div className="flex justify-center gap-17">
-          <span className="text-gray-400 text-lg">2025.03.09</span>
+        <div className="flex justify-center gap-10 sm:gap-17">
+          <span className="text-gray-400 text-base sm:text-lg whitespace-pre-wrap sm:whitespace-nowrap">
+            {`2025\n03.09`}
+          </span>
           <div className="flex flex-col gap-1">
-            <h4 className="text-lg font-semibold">OPIc</h4>
-            <span className="text-md text-gray-600">Intermediate High</span>
+            <h4 className="text-base sm:text-lg font-semibold">OPIc</h4>
+            <span className="text-sm sm:text-md text-gray-400 font-medium">
+              Intermediate High
+            </span>
           </div>
         </div>
       </div>

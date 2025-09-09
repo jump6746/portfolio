@@ -11,7 +11,8 @@ type IconName =
   | "message"
   | "phone-call"
   | "smile-face"
-  | "velog";
+  | "velog"
+  | "close";
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   name?: IconName;

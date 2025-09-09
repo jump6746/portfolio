@@ -15,7 +15,7 @@ const Archive = () => {
             <Icon name="github" size={24} />
             <span>Github</span>
           </h3>
-          <span className="text-gray-600">
+          <span className="text-gray-400 font-medium">
             프로젝트 및 개인 공부 소스 코드 저장소입니다.
           </span>
         </a>
@@ -27,7 +27,7 @@ const Archive = () => {
             <Icon name="velog" size={24} />
             <span>Blog</span>
           </h3>
-          <span className="text-gray-600">
+          <span className="text-gray-400 font-medium">
             흥미롭거나 새롭게 배운 것들을 기록하는 공간입니다.
           </span>
         </a>
