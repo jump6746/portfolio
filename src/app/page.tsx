@@ -15,7 +15,7 @@ const Home = () => {
                 입니다.
               </span>
             </div>
-            <div className="flex flex-col gap-1 text-md sm:text-lg md:text-xl text-gray-400 items-center">
+            <div className="flex flex-col gap-1 text-md sm:text-lg md:text-xl text-gray-600 items-center">
               <span>새로운 가능성을 탐구하며 성장하는</span>
               <span>웹 개발의 매력에 빠져 있습니다.</span>
               <span>사용자에게는 최적의 경험을</span>

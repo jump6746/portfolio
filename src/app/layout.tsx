@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "김종명의 포트폴리오",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );

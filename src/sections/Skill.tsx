@@ -10,7 +10,7 @@ const Skill = () => {
         <h2 className="text-blue-600 font-semibold text-center mx-auto text-xl">
           기술 스택
         </h2>
-        <span className="text-gray-400 text-lg font-medium">
+        <span className="text-gray-600 text-lg font-medium">
           해당 기술들을 사용할 수 있습니다.
         </span>
       </div>
