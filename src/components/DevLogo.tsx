@@ -50,7 +50,7 @@ const DevLogo = ({ size = 48, title }: Props) => {
   return (
     <div className="relative group">
       <Icon src={DevSrc[title]} size={size} />
-      <span className="text-xs absolute bottom-0 whitespace-nowrap left-0 bg-white text-blue-700 translate-y-full hidden group-hover:block">
+      <span className="text-xs absolute bottom-0 whitespace-nowrap left-0 bg-background text-accent translate-y-full hidden group-hover:block">
         {title}
       </span>
     </div>

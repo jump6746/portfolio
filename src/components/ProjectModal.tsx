@@ -42,7 +42,7 @@ const ProjectModal = ({ id }: Props) => {
       {/* 더보기 버튼 */}
       <button
         onClick={handleMoreClick}
-        className="text-gray-400 hover:font-semibold mx-auto hover:text-gray-600 mt-auto w-fit cursor-pointer text-sm sm:text-md"
+        className="text-fourth hover:font-semibold mx-auto hover:text-third mt-auto w-fit cursor-pointer text-sm sm:text-md"
       >
         상세보기
       </button>
@@ -50,11 +50,11 @@ const ProjectModal = ({ id }: Props) => {
       {/* 모달 */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-10"
+          className="fixed inset-0 bg-primary/50 flex items-center justify-center z-50 p-10"
           onClick={closeModal}
         >
           <div
-            className="bg-white rounded-lg max-w-2xl max-h-[90vh] w-full overflow-hidden"
+            className="bg-background rounded-lg max-w-2xl max-h-[90vh] w-full overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* 모달 콘텐츠 */}
@@ -67,7 +67,7 @@ const ProjectModal = ({ id }: Props) => {
               </button>
               {loading ? (
                 <div className="flex justify-center items-center h-32">
-                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
                   <span className="ml-2 text-gray-600">로딩 중...</span>
                 </div>
               ) : (
@@ -75,22 +75,22 @@ const ProjectModal = ({ id }: Props) => {
                   <ReactMarkdown
                     components={{
                       h1: ({ children }) => (
-                        <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-gray-800">
+                        <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-secondary">
                           {children}
                         </h1>
                       ),
                       h2: ({ children }) => (
-                        <h2 className="text-md sm:text-lg md:text-xl font-semibold mb-4 text-gray-800">
+                        <h2 className="text-md sm:text-lg md:text-xl font-semibold mb-4 text-secondary">
                           {children}
                         </h2>
                       ),
                       h3: ({ children }) => (
-                        <h3 className="text-sm sm:text-md md:text-lg font-semibold mb-3 text-gray-800">
+                        <h3 className="text-sm sm:text-md md:text-lg font-semibold mb-3 text-secondary">
                           {children}
                         </h3>
                       ),
                       p: ({ children }) => (
-                        <p className="text-xs sm:text-sm md:text-md mb-4 text-gray-700 leading-relaxed whitespace-pre-wrap">
+                        <p className="text-xs sm:text-sm md:text-md mb-4 text-secondary leading-relaxed whitespace-pre-wrap">
                           {children}
                         </p>
                       ),
@@ -112,14 +112,14 @@ const ProjectModal = ({ id }: Props) => {
                         </ol>
                       ),
                       blockquote: ({ children }) => (
-                        <blockquote className="border-l-4 text-xs sm:text-sm md:text-md border-blue-200 pl-4 italic text-gray-600 mb-4 bg-blue-50 py-2">
+                        <blockquote className="border-l-4 text-xs sm:text-sm md:text-md border-blue-200 pl-4 italic text-third mb-4 bg-foreground py-2">
                           {children}
                         </blockquote>
                       ),
                       a: ({ href, children }) => (
                         <a
                           href={href}
-                          className="text-blue-600 hover:text-blue-800 underline text-xs sm:text-sm md:text-md"
+                          className="text-brand hover:text-accent underline text-xs sm:text-sm md:text-md"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

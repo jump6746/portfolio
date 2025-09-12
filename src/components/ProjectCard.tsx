@@ -23,17 +23,17 @@ const ProjectCard = ({
   url,
 }: Props) => {
   return (
-    <div className="flex flex-col bg-white px-3 py-5 gap-3">
+    <div className="flex flex-col bg-background px-3 py-5 gap-3">
       <h3 className="font-semibold text-lg sm:text-xl w-fit rounded-lg">
         {summary}
       </h3>
-      <div className="flex gap-2 text-gray-400">
+      <div className="flex gap-2 text-fourth">
         <span>{term}</span>
         <span>{people}인 팀프로젝트</span>
       </div>
       <span className="text-sm sm:text-md font-medium">{title}</span>
       {url ? (
-        <a href={url} className="text-blue-600">
+        <a href={url} className="text-brand">
           {url}
         </a>
       ) : null}

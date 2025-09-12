@@ -7,10 +7,10 @@ const Skill = () => {
       className="w-full py-15 flex flex-col items-center gap-10"
     >
       <div className="flex flex-col gap-3 items-center">
-        <h2 className="text-blue-600 font-semibold text-center mx-auto text-xl">
+        <h2 className="text-brand font-semibold text-center mx-auto text-xl">
           기술 스택
         </h2>
-        <span className="text-gray-600 text-lg font-medium">
+        <span className="text-third text-lg font-medium">
           해당 기술들을 사용할 수 있습니다.
         </span>
       </div>

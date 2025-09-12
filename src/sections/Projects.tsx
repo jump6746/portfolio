@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section id="project" className="w-full py-15">
       <div className="flex flex-col max-w-6xl px-4 mx-auto gap-10">
-        <h2 className="text-blue-600 font-semibold text-xl text-center">
+        <h2 className="text-brand font-semibold text-xl text-center">
           프로젝트
         </h2>
         <div className="grid-cols-1 md:grid-cols-2 grid">

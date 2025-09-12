@@ -2,20 +2,36 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #f0f9ff;
+  --primary: #000000;
+  --accent: #1447e6;
+  --brand: #155dfc;
+  --secondary: #1e2939;
+  --third: #4a5565;
+  --fourth: #99a1af;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-brand: var(--brand);
+  --color-secondary: var(--secondary);
+  --color-third: var(--third);
+  --color-fourth: var(--fourth);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* 기존 */
+    --foreground: #0f172a; /* 다크한 네이비 배경 */
+    --primary: #ffffff; /* 흰색 텍스트 */
+    --accent: #3b82f6; /* 밝은 파란색 */
+    --brand: #60a5fa; /* 더 밝은 브랜드 블루 */
+    --secondary: #e2e8f0; /* 밝은 회색 */
+    --third: #cbd5e1; /* 중간 밝기 회색 */
+    --fourth: #64748b; /* 어두운 회색 */
   }
 }
 
@@ -26,7 +42,7 @@ html {
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--primary);
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
