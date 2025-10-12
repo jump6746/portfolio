@@ -1,5 +1,5 @@
+import Link from "next/link";
 import DevLogo, { DevTitle } from "./DevLogo";
-import ProjectModal from "./ProjectModal";
 
 interface Props {
   id: number;
@@ -47,7 +47,12 @@ const ProjectCard = ({
           <DevLogo key={item} title={item as DevTitle} size={36} />
         ))}
       </div>
-      <ProjectModal id={id} />
+      <Link
+        href={`/project/${id}`}
+        className="text-fourth hover:font-semibold mx-auto hover:text-third mt-auto w-fit cursor-pointer text-sm sm:text-md"
+      >
+        상세보기
+      </Link>
     </div>
   );
 };

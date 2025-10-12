@@ -23,9 +23,9 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
       </head>
-      <body>
+      <body className="h-dvh">
         <Navigation />
-        <main>{children}</main>
+        <main className="h-full">{children}</main>
         <Analytics />
       </body>
     </html>

@@ -8,11 +8,11 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
-    { href: "#about", label: "내 정보" },
-    { href: "#skill", label: "기술" },
-    { href: "#archive", label: "저장소" },
-    { href: "#project", label: "프로젝트" },
-    { href: "#career", label: "경력 & 활동" },
+    { href: "/#about", label: "내 정보" },
+    { href: "/#skill", label: "기술" },
+    { href: "/#archive", label: "저장소" },
+    { href: "/#project", label: "프로젝트" },
+    { href: "/#career", label: "경력 & 활동" },
   ];
 
   // 스크롤 이벤트 감지

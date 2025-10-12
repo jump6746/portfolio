@@ -13,7 +13,7 @@ const Projects = () => {
             title="PixmeUp"
             term="2025.04 ~ 2025.05"
             people={6}
-            summary="Pixelro 기업과 연계한 내눈 키오스크 기반 AI 눈 건강 플랫폼"
+            summary="SSAFY 내에서 Pixelro 기업과 연계한 내눈 키오스크 기반 AI 눈 건강 플랫폼"
             explain={[
               "키오스크에서 얻은 데이터를 바탕으로 AI 진단과 눈 운동 서비스 제공",
               "SSE 기반 비동기 AI 처리 결과 실시간 업데이트 시스템 개발",

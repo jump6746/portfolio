@@ -4,7 +4,9 @@ const Education = () => {
       id="career"
       className="flex flex-col items-start py-20 px-5 w-fit gap-10 mx-auto"
     >
-      <h3 className="text-brand font-semibold text-xl mx-auto">교육 및 어학</h3>
+      <h3 className="text-brand font-semibold text-xl mx-auto">
+        교육 및 자격증
+      </h3>
       <div className="flex flex-col gap-10 items-start">
         <div className="flex justify-center gap-5 sm:gap-15">
           <span className="text-third text-base sm:text-lg">2024 - 2025</span>
@@ -66,6 +68,14 @@ const Education = () => {
       </div>
       <div className="h-1 max-w-xl min-w-2xs w-full bg-fourth/25"></div>
       <div className="flex flex-col gap-10 items-start">
+        <div className="flex justify-center gap-10 sm:gap-17">
+          <span className="text-third text-base sm:text-lg whitespace-pre-wrap sm:whitespace-nowrap">
+            {`2025\n09.12`}
+          </span>
+          <div className="flex flex-col gap-1">
+            <h4 className="text-base sm:text-lg font-semibold">정보처리기사</h4>
+          </div>
+        </div>
         <div className="flex justify-center gap-10 sm:gap-17">
           <span className="text-third text-base sm:text-lg whitespace-pre-wrap sm:whitespace-nowrap">
             {`2025\n03.09`}

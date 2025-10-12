@@ -1,0 +1,60 @@
+{
+  "items": {
+    "title": "MIMO",
+    "projectTerm": "2025.01 ~ 2025.02",
+    "members": 6,
+    "membersRole": "FE 2명, BE/Infra 1명, BE 2명",
+    "myRole": "FE 팀장",
+    "discription": "SSAFY 내에서 회비 관리부터 실시간 채팅까지 모임 운영을 위한 통합 플랫폼 서비스를 만들어봤습니다.",
+    "github": "",
+    "skills": [
+      "React",
+      "Typescript",
+      "Tailwind CSS",
+      "Tanstack Query",
+      "Zustand"
+    ],
+    "projectHighlights": [
+      {
+        "id": 1,
+        "highlight": "모임별 실시간 채팅 기능"
+      },
+      {
+        "id": 2,
+        "highlight": "PG사 API 연동을 통한 모임 회비 관리 및 결제 기능"
+      },
+      {
+        "id": 3,
+        "highlight": "원하는 모임을 여러가지 검색 조건으로 찾기 기능"
+      }
+    ],
+    "functionResponsibles": [
+      {
+        "id": 1,
+        "function": "WebSocket 리소스 관리로 안정적인 채팅 환경 구축",
+        "detail": [
+          "WebSocket 연결 관리를 Zustand로 전역으로 관리",
+          "연결 해제 및 재연결을 통합적으로 관리"
+        ]
+      },
+      {
+        "id": 2,
+        "function": "PG사 API 얀동을 통한 결제 플로우 구축",
+        "detail": [
+          "모임 회비 결제의 편의성과 안정성을 위해 아임포트 API를 연동한 결제 시스템 구현",
+          "양한 결제 수단을 지원하고 충전한 금액을 바로 확인할 수 있도록 Tanstack-Query를 통해서 관리"
+        ]
+      }
+    ],
+    "functionReasons": [
+      {
+        "id": 1,
+        "function": "Websocket & Zustand",
+        "reason": "채팅의 실시간성을 반영하기 위해서 Websocket을 사용하고 연결 상태를 즉각적으로 업데이트 시키기 위해서 Zustand를 사용해서 전역으로 관리했습니다."
+      }
+    ],
+    "error": "",
+    "solved": "",
+    "study": ""
+  }
+}
